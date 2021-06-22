@@ -6,7 +6,7 @@
   "homepage": "https://yanamoss.github.io/goit-js-hw-09-gallery",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "babel src -d dist"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09-gallery/"
   },
   "repository": {
     "type": "git",
