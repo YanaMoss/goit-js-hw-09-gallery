@@ -133,10 +133,10 @@ function swipe(galleryItems, delta) {
    let indexSlider = Number(index) + delta;
    if (indexSlider < 0) {
       indexSlider = galleryItems.length - 1;
-   };
-   if (indexSlider > galleryItems.length) {
-      indexSlider = 0;
    }
+   else if (indexSlider === galleryItems.length) {
+      indexSlider = 0;
+   };
    lightboxImage.setAttribute('src', galleryItems[indexSlider].original);
    lightboxImage.setAttribute('alt', galleryItems[indexSlider].description);
    lightboxImage.setAttribute('data-idx', indexSlider);      
